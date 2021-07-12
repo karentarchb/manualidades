@@ -1,0 +1,266 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+/* -------------------- Variables */
+:root {
+  --verdelima: #7ACC2D;
+  --blanco: white;
+  --negro: black;
+  --col-width: 8.33333333333%;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  width: var(--col-width);
+}
+
+.col-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-3 {
+  width: calc(var(--col-width) * 3);
+}
+
+.col-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-6 {
+  width: calc(var(--col-width) * 6);
+}
+
+.col-7 {
+  width: calc(var(--col-width) * 7);
+}
+
+.col-8 {
+  width: calc(var(--col-width) * 8);
+}
+
+.col-9 {
+  width: calc(var(--col-width) * 9);
+}
+
+.col-10 {
+  width: calc(var(--col-width) * 10);
+}
+
+.col-11 {
+  width: calc(var(--col-width) * 11);
+}
+
+.col-12 {
+  width: calc(var(--col-width) * 12);
+}
+
+[class*="col-"] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/
+  padding: 10px;
+}
+
+@media(max-width: 1000px){
+  .row{
+    display: inherit;
+  }
+  [class*="col-"] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/
+    width: 100%;
+  }
+}
+/* -------------------- Fin variables */
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'New Tegomin', serif;
+    background-color:  var(--verdelima);;
+}
+
+.logo_image img {
+    height: 50px;
+   
+}
+
+nav{
+    display: flex;
+    background-color: var(--verdelima);
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+nav h2{
+    padding-left: 10px;
+    color:  var(--negro);
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+  }
+  
+  nav li{
+    padding-left: 20px;
+    list-style: none;
+  
+  }
+  
+  nav li a{
+    color: var(--negro);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  nav li a:hover{
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  /* ------------------------ Main section */
+
+  h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+.main_section{
+    padding: 10%;
+    text-align: center;
+  }
+
+  .products{
+    background-image: url("/assets/img/curve.png");
+    height: 300px;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+  }
+
+  .product{
+    margin: 5px;
+    margin-top: -35px;
+
+  }
+
+  .product .content{
+    background-color: var(--blanco);
+    padding: 15px;
+    box-shadow: 0 0 2px #797575;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  h2{
+    font-weight: 700;
+    font-size: 2rem; 
+  }
+
+  .product .content:hover{
+    box-shadow: 0 0 10px #7e8520;
+  }
+
+  .img_content {
+      text-align: center;
+      margin-top: -80px;
+  }
+
+  .main_button {
+    background-color:  var(--verdelima);;
+    margin-left: 30%;
+    padding: 10px;
+    font-size: 17px;
+    color: var(--blanco);
+    border: 30px;
+    box-shadow: 0 0 2px #797575;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .main_button:hover {
+    background-color: #5e9e22;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    box-shadow: 0 0 5px #7e8520;
+  }
+
+  /* Beneficios */
+
+.beneficios{
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+h3{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+/* Mentions */
+.mentions{
+  display: flex;
+  padding: 5%;
+}
+.mention img{
+  width: 100%;
+}
+h2.mention_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.mention{
+  padding: 10px;
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #166e22;
+}
+.mention .text{
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
+/* ------------------------------------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  background-color: var(--negro);
+  padding: 20px;
+  color: var(--blanco);
+}
