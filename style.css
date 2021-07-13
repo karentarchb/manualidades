@@ -100,84 +100,94 @@ html, body {
 }
 
 nav{
-    display: flex !important;
-    background-color: var(--verdelima);
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex !important;
+  background-color: var(--verdelima);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 A:link {text-decoration: none }
+nav h2 A:visited {color: black;  font-family: arial; text-decoration: none }
+nav h2 A:hover {color: black; font-family: arial; text-decoration: none }
 
 nav h2{
-    color:  var(--negro);
-    margin-top: 25px;
-    margin-bottom: 5px;
-    font-weight: 900;
+  color:  var(--negro);
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: 900;
 }
 
-nav h2:hover{
+nav h2 a:hover{
   color: var(--blanco);
 }
-
 
 nav ul{
     display: flex;
   }
   
-  nav li{
-    padding-right: 40px;
-    list-style: none;
+nav li{
+  padding-right: 40px;
+  list-style: none;
+}
   
-  }
+nav li a{
+  color: var(--negro);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 700;
+}
   
-  nav li a{
-    color: var(--negro);
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 700;
-  }
-  
-  nav li a:hover{
-    color: var(--blanco);
-    text-decoration: none;
-    font-weight: 700;
-  }
+nav li a:hover{
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+}
 
   /* ------------------------ Main section */
 
-  h1{
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 50px;
-  }
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
 
 .main_section{
-    padding: 10%;
-    text-align: center;
-  }
+  padding: 10%;
+  text-align: center;
+}
 
-  .products{
-    background-image: url("/assets/img/curve.png");
-    height: 300px;
-    background-size: cover;
-    background-position: center top;
-    display: flex;
-  }
+.products{
+  background-image: url("/assets/img/curve.png");
+  height: 300px;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+}
 
-  .product{
-    margin: 5px;
-    margin-top: -35px;
+.product{
+  margin-top: -35px;
 
-  }
+}
 
-  .product .content{
-    background-color: var(--blanco);
-    padding: 15px;
-    box-shadow: 0 0 2px #797575;
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
+.product .content{
+  background-color: var(--blanco);
+  padding: 15px;
+  box-shadow: 0 0 2px #797575;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+  
   h2{
-    font-weight: 700;
-    font-size: 2rem; 
+    margin-top: -15px!important;
+    margin-bottom: 15px!important;
+    font-size: 2rem!important;
+    font-weight: bold!important;
+  }
+
+  p{
+    margin-bottom: 30px !important;
   }
 
   .product .content:hover{
@@ -191,7 +201,6 @@ nav ul{
 
   .main_button {
     background-color:  var(--verdelima);;
-    margin-left: 30%;
     padding: 10px;
     font-size: 17px;
     color: var(--blanco);
@@ -221,6 +230,7 @@ nav ul{
   text-align: center;
   padding: 20px;
 }
+
 h3{
   font-size: 2rem;
   font-weight: bold;
@@ -269,14 +279,24 @@ footer{
   color: var(--blanco);
 }
 
+/* ------------------------------------------- Mobile */
+
 @media (max-width: 600px) {
 
+nav ul{
+  position: absolute;
+  margin-top: 120px;
+}
+
+h1{
+  margin-top: 40px!important;
+}
   .products{
     display: inherit;
     height: auto;
   }
   .product{
-    margin-top: 40px;
+    margin-top: 50px;
   }
   .main_section{
     padding: 4%;
@@ -285,5 +305,13 @@ footer{
     display: inherit;
   }
 
+  .option{
+    margin-right: 10px;
+  }
 
+.option-mail{
+  position: absolute;
+  margin-top: 37px;
+
+}
 }
