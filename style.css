@@ -96,7 +96,8 @@ html, body {
 }
 
 .logo_image img {
-    height: 70px;
+  width: 50px;
+  height: 70px;
 }
 
 nav{
@@ -199,6 +200,11 @@ h1{
       margin-top: -80px;
   }
 
+  .img_content img{
+    width: 150px;
+    height: 150px;
+  }
+
   .main_button {
     background-color:  var(--verdelima);;
     padding: 10px;
@@ -237,6 +243,8 @@ h3{
 }
 
 .beneficio img{
+  width: 120px;
+  height: 100px;
   max-height: 100px
 }
 
@@ -250,20 +258,26 @@ h3{
   display: flex;
   padding: 5%;
 }
-.mention img{
-  width: 100%;
-}
+
 h2.mention_title{
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
 }
+
 .mention{
   padding: 10px;
 }
+
 .content_mention{
   box-shadow: 0px 0 2px 1px #166e22;
 }
+
+.content_mention img{
+  height: 100%;
+  width: 100%;
+}
+
 .mention .text{
   padding: 10px;
   font-size: 1.4rem;
